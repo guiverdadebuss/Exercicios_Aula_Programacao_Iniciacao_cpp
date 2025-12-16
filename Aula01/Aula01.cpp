@@ -84,19 +84,47 @@ using namespace std;
 //O valor dado para fazer o pagamento(assumindo que este é superior).
 //Considere que o valor dado para pagar é superior ao valor que tem a pagar.
 
-int main()
-{
-	double valorPagar, valorDado, trocoEfetivo, trocoInicial, gorjeta;
-	cout << "### CALCULADOR DE GORJETA E TROCO ###" << endl;
-	cout << "Quanto que deu o jantar? ";
-	cin >> valorPagar;
-	cout << "O cliente entregou quanto? ";
-	cin >> valorDado;
-	trocoInicial = valorDado - valorPagar;
-	gorjeta = trocoInicial * 0.1;
-	trocoEfetivo = trocoInicial - gorjeta;
-	cout << "A gorjeta dada pelo cliente foi de " << gorjeta << endl;
-	cout << "O troco devolvido ao cliente foi de " << trocoEfetivo << endl;
-	cout << "Obrigado pela gorjeta!";
-}
+//int main()
+//{
+//	double valorPagar, valorDado, trocoEfetivo, trocoInicial, gorjeta;
+//	cout << "### CALCULADOR DE GORJETA E TROCO ###" << endl;
+//	cout << "Quanto que deu o jantar? ";
+//	cin >> valorPagar;
+//	cout << "O cliente entregou quanto? ";
+//	cin >> valorDado;
+//	trocoInicial = valorDado - valorPagar;
+//	gorjeta = trocoInicial * 0.1;
+//	trocoEfetivo = trocoInicial - gorjeta;
+//	cout << "A gorjeta dada pelo cliente foi de " << gorjeta << endl;
+//	cout << "O troco devolvido ao cliente foi de " << trocoEfetivo << endl;
+//	cout << "Obrigado pela gorjeta!";
+//}
 
+
+//8. Dado um número inteiro positivo, com 3 dígitos inteiros, imprimir os seus dígitos separados por espaços.
+//	Considere que o número inserido já é de 3 dígitos, ou seja, entre 100 e 999.
+
+//int main()
+//{
+//	int numero, n1, n2, n3;
+//	cout << "Insira um numero inteiro positivo de 3 digitos" << endl;
+//	cin >> numero;
+//	n1 = numero / 100;
+//	n2 = (numero % 100) / 10;
+//	n3 = numero % 10;
+//	cout << n1 << " " << n2 << " " << n3;
+//}
+
+//9. Ler um número inteiro e que indicar se o número é par ou ímpar.
+
+//int main()
+//{
+//	int numero;
+//	cout << "Insira um numero inteiro" << endl;
+//	cin >> numero;
+//	if (numero % 2 == 0) {
+//		cout << "Numero inserido = par.";
+//	} else {
+//		cout << "Numero inserido = impar.";
+//	}
+//}
