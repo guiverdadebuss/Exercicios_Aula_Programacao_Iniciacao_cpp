@@ -148,3 +148,31 @@ using namespace std;
 //		cout << "Aluno foi reprovado com media: " << media;
 //	}
 //}
+
+//11. Calcular o salário semanal de um colaborador, que recebe à hora, a partir apenas do nº de horas que este trabalhou.
+//Sabe - se que o número de horas semanais é 36 e que o preço à hora é de 7, 5€.Se o colaborador fizer horas extra(mais
+//	de 36 horas) recebe 10€ por cada hora extra.
+//	Note que não pode pedir ao utilizador para indicar as horas extra, pois é um dado que pode ser calculado.
+//Algoritmo que calcula salário semanal
+//
+//int main()
+//{
+//	int horasTrabalhadas, horasExtras;
+//	double valorHora, valorHoraExtra, salarioSemanal;
+//	cout << "Informe quantas horas foram trabalhadas essa semana: " << endl;
+//	cin >> horasTrabalhadas;
+//	valorHora = 7.5;
+//	horasExtras = horasTrabalhadas - 36;
+//	valorHoraExtra = 10;
+//	if (horasTrabalhadas > 36) {
+//		salarioSemanal = (horasTrabalhadas - horasExtras) * valorHora + (horasExtras * valorHoraExtra);
+//		cout << "Salario semanal = " << salarioSemanal << endl;
+//		cout << "Salario semanal = " << horasTrabalhadas - horasExtras << " X " << valorHora << " + " << horasExtras << " X " << valorHoraExtra << endl;
+//		cout << "Salario semanal = 36 horas X ValorHora(7.5) + HorasExtras X ValorHoraExtra(10)";
+//	}
+//	else {
+//		salarioSemanal = horasTrabalhadas * valorHora;
+//		cout << "Salario semanal = " << salarioSemanal << endl;
+//		cout << "Salario semanal = HorasTrabalhadas X ValorHora(7.5)";
+//	}
+//}
