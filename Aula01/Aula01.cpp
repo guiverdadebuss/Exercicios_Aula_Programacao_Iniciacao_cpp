@@ -31,7 +31,7 @@ using namespace std;
 //}
 
 //3. Mostrar o resultado da divisão inteira entre dois números inseridos pelo utilizador.
-
+//
 //int main()
 //{
 //	int num1, num2;
@@ -41,7 +41,7 @@ using namespace std;
 //}
 
 //4. Ler um número inteiro e apresentar o seu antecedente (número anterior) e o seu sucessor (posterior).
-
+//
 //int main()
 //{
 //	int num;
@@ -51,7 +51,7 @@ using namespace std;
 //}
 
 //5. Obter a área de um triângulo. area = (base * altura) / 2
-
+//
 //int main()
 //{
 //	int base, altura, area;
@@ -65,7 +65,7 @@ using namespace std;
 //}
 
 //6. Determinar o valor total a pagar de uma dada mercadoria sendo que ao valor lido, deverá ser acrescido 23% de IVA.
-
+//
 //int main()
 //{
 //	int valor;
@@ -83,7 +83,7 @@ using namespace std;
 //O valor a pagar;
 //O valor dado para fazer o pagamento(assumindo que este é superior).
 //Considere que o valor dado para pagar é superior ao valor que tem a pagar.
-
+//
 //int main()
 //{
 //	double valorPagar, valorDado, trocoEfetivo, trocoInicial, gorjeta;
@@ -103,7 +103,7 @@ using namespace std;
 
 //8. Dado um número inteiro positivo, com 3 dígitos inteiros, imprimir os seus dígitos separados por espaços.
 //	Considere que o número inserido já é de 3 dígitos, ou seja, entre 100 e 999.
-
+//
 //int main()
 //{
 //	int numero, n1, n2, n3;
@@ -116,7 +116,7 @@ using namespace std;
 //}
 
 //9. Ler um número inteiro e que indicar se o número é par ou ímpar.
-
+//
 //int main()
 //{
 //	int numero;
@@ -126,5 +126,25 @@ using namespace std;
 //		cout << "Numero inserido = par.";
 //	} else {
 //		cout << "Numero inserido = impar.";
+//	}
+//}
+
+//10. Dadas as notas do exame escrito e do oral de um aluno, verificar se este obteve aprovação(ExEscrito = 70 %,
+//	ExOral = 30 %, aprovação ≥ 10).
+//Alg.verifica aprovação teste
+//
+//int main()
+//{
+//	double exEscrito, exOral, media;
+//	cout << "Insira a nota do exame escrito: " << endl;
+//	cin >> exEscrito;
+//	cout << "Insira a nota do exame oral: " << endl;
+//	cin >> exOral;
+//	media = (exEscrito * 0.7) + (exOral * 0.3);
+//	if (media >= 10) {
+//		cout << "Aluno foi aprovado com media: " << media;
+//	}
+//	else {
+//		cout << "Aluno foi reprovado com media: " << media;
 //	}
 //}
