@@ -155,24 +155,27 @@ using namespace std;
 //	Note que não pode pedir ao utilizador para indicar as horas extra, pois é um dado que pode ser calculado.
 //Algoritmo que calcula salário semanal
 //
-//int main()
-//{
-//	int horasTrabalhadas, horasExtras;
-//	double valorHora, valorHoraExtra, salarioSemanal;
-//	cout << "Informe quantas horas foram trabalhadas essa semana: " << endl;
-//	cin >> horasTrabalhadas;
-//	valorHora = 7.5;
-//	horasExtras = horasTrabalhadas - 36;
-//	valorHoraExtra = 10;
-//	if (horasTrabalhadas > 36) {
-//		salarioSemanal = (horasTrabalhadas - horasExtras) * valorHora + (horasExtras * valorHoraExtra);
-//		cout << "Salario semanal = " << salarioSemanal << endl;
-//		cout << "Salario semanal = " << horasTrabalhadas - horasExtras << " X " << valorHora << " + " << horasExtras << " X " << valorHoraExtra << endl;
-//		cout << "Salario semanal = 36 horas X ValorHora(7.5) + HorasExtras X ValorHoraExtra(10)";
-//	}
-//	else {
-//		salarioSemanal = horasTrabalhadas * valorHora;
-//		cout << "Salario semanal = " << salarioSemanal << endl;
-//		cout << "Salario semanal = HorasTrabalhadas X ValorHora(7.5)";
-//	}
-//}
+int main()
+{
+	int horastrabalhadas, horasextras;
+	double valorhora, valorhoraextra, salariosemanal;
+	cout << "informe quantas horas foram trabalhadas essa semana: " << endl;
+	cin >> horastrabalhadas;
+	valorhora = 7.5;
+	horasextras = horastrabalhadas - 36;
+	valorhoraextra = 10;
+	if (horastrabalhadas > 36) {
+		salariosemanal = (horastrabalhadas - horasextras) * valorhora + (horasextras * valorhoraextra);
+		cout << "salario semanal = " << salariosemanal << endl;
+		cout << "salario semanal = " << horastrabalhadas - horasextras << " x " << valorhora << " + " << horasextras << " x " << valorhoraextra << endl;
+		cout << "salario semanal = 36 horas x valorhora(7.5) + horasextras x valorhoraextra(10)";
+	}
+	else {
+		salariosemanal = horastrabalhadas * valorhora;
+		cout << "salario semanal = " << salariosemanal << endl;
+		cout << "salario semanal = horastrabalhadas x valorhora(7.5)";
+	}
+}
+
+
+12.
