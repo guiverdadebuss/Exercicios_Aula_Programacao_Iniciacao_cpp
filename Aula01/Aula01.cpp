@@ -186,28 +186,51 @@ using namespace std;
 //Crie um algoritmo que determine a que grupo corresponde um dado colaborador lendo o estado civil(valor
 //	inteiro : 0 para solteiro e 1 para casado) e a sua idade.
 //Algoritmo que determina o grupo que pertence coloborador lendo estado civil e sua idade
-int main()
-{
-	int numero, estadoCivil, idade;
-	cout << "Insira 0 para solteiro e 1 para casado" << endl;
-	cin >> numero;
-	cout << "Insira sua idade" << endl;
-	cin >> idade;
-	estadoCivil = numero + 1;
-	switch (estadoCivil) {
-	case 1:
-		if (idade < 25) {
-			cout << "Grupo 1";
-		}
-		else {
-			cout << "Grupo 2";
-		}
-	case 2:
-		if (idade < 34) {
-			cout << "Grupo 3";
-		}
-		else {
-			cout << "Grupo 4";
-		}
-	}
-}
+//
+//int main()
+//{
+//	int numero, estadoCivil, idade;
+//	cout << "Insira 0 para solteiro e 1 para casado" << endl;
+//	cin >> numero;
+//	cout << "Insira sua idade" << endl;
+//	cin >> idade;
+//	estadoCivil = numero + 1;
+//	switch (estadoCivil) {
+//	case 1:
+//		if (idade < 25) {
+//			cout << "Grupo 1";
+//		}
+//		else {
+//			cout << "Grupo 2";
+//		}
+//	case 2:
+//		if (idade < 34) {
+//			cout << "Grupo 3";
+//		}
+//		else {
+//			cout << "Grupo 4";
+//		}
+//	}
+//}
+
+//13. Construa um programa que aceite números entre 1 e 7 e a cada um deles faça corresponder o dia da semana.Por
+//exemplo, lendo o número 1 o programa deverá escrever “domingo” e lendo o número 7 devera escrever “sábado”.
+// Algoritmo que informa o dia da semana mediante dia informado em numero.
+//
+//int main()
+//{
+//	int dia;
+//	cout << "#####  DIA DA SEMANA  #####" << endl;
+//	cout << "Insira um numero entre 1 e 7, podendo os considerar na mesma" << endl;
+//	cin >> dia;
+//	switch (dia) {
+//	case 1: cout << "DIA : Domingo"; break;
+//	case 2: cout << "DIA : Segunda Feira"; break;
+//	case 3: cout << "DIA : Terca Feira"; break;
+//	case 4: cout << "DIA : Quarta Feira"; break;
+//	case 5: cout << "DIA : Quinta Feira"; break;
+//	case 6: cout << "DIA : Sexta Feira"; break;
+//	case 7: cout << "DIA : Sabado"; break;
+//	default: cout << "#####  Foi pedido numero entre 1 e 7  #####"; break;
+//	}
+//}
