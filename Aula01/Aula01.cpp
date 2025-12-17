@@ -155,27 +155,59 @@ using namespace std;
 //	Note que não pode pedir ao utilizador para indicar as horas extra, pois é um dado que pode ser calculado.
 //Algoritmo que calcula salário semanal
 //
+//int main()
+//{
+//	int horastrabalhadas, horasextras;
+//	double valorhora, valorhoraextra, salariosemanal;
+//	cout << "informe quantas horas foram trabalhadas essa semana: " << endl;
+//	cin >> horastrabalhadas;
+//	valorhora = 7.5;
+//	horasextras = horastrabalhadas - 36;
+//	valorhoraextra = 10;
+//	if (horastrabalhadas > 36) {
+//		salariosemanal = (horastrabalhadas - horasextras) * valorhora + (horasextras * valorhoraextra);
+//		cout << "salario semanal = " << salariosemanal << endl;
+//		cout << "salario semanal = " << horastrabalhadas - horasextras << " x " << valorhora << " + " << horasextras << " x " << valorhoraextra << endl;
+//		cout << "salario semanal = 36 horas x valorhora(7.5) + horasextras x valorhoraextra(10)";
+//	}
+//	else {
+//		salariosemanal = horastrabalhadas * valorhora;
+//		cout << "salario semanal = " << salariosemanal << endl;
+//		cout << "salario semanal = horastrabalhadas x valorhora(7.5)";
+//	}
+//}
+
+
+//12. Uma empresa decidiu classificar os seus colaboradores em quatro grupos:
+//Grupo 1 - Solteiros com menos de 25 anos
+//Grupo 2 - Solteiros com 25 anos ou mais
+//Grupo 3 - Casados com menos de 34 anos
+//Grupo 4 - Casados com 34 anos ou mais
+//Crie um algoritmo que determine a que grupo corresponde um dado colaborador lendo o estado civil(valor
+//	inteiro : 0 para solteiro e 1 para casado) e a sua idade.
+//Algoritmo que determina o grupo que pertence coloborador lendo estado civil e sua idade
 int main()
 {
-	int horastrabalhadas, horasextras;
-	double valorhora, valorhoraextra, salariosemanal;
-	cout << "informe quantas horas foram trabalhadas essa semana: " << endl;
-	cin >> horastrabalhadas;
-	valorhora = 7.5;
-	horasextras = horastrabalhadas - 36;
-	valorhoraextra = 10;
-	if (horastrabalhadas > 36) {
-		salariosemanal = (horastrabalhadas - horasextras) * valorhora + (horasextras * valorhoraextra);
-		cout << "salario semanal = " << salariosemanal << endl;
-		cout << "salario semanal = " << horastrabalhadas - horasextras << " x " << valorhora << " + " << horasextras << " x " << valorhoraextra << endl;
-		cout << "salario semanal = 36 horas x valorhora(7.5) + horasextras x valorhoraextra(10)";
-	}
-	else {
-		salariosemanal = horastrabalhadas * valorhora;
-		cout << "salario semanal = " << salariosemanal << endl;
-		cout << "salario semanal = horastrabalhadas x valorhora(7.5)";
+	int numero, estadoCivil, idade;
+	cout << "Insira 0 para solteiro e 1 para casado" << endl;
+	cin >> numero;
+	cout << "Insira sua idade" << endl;
+	cin >> idade;
+	estadoCivil = numero + 1;
+	switch (estadoCivil) {
+	case 1:
+		if (idade < 25) {
+			cout << "Grupo 1";
+		}
+		else {
+			cout << "Grupo 2";
+		}
+	case 2:
+		if (idade < 34) {
+			cout << "Grupo 3";
+		}
+		else {
+			cout << "Grupo 4";
+		}
 	}
 }
-
-
-12.
