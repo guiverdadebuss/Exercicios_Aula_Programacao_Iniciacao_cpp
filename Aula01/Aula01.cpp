@@ -243,3 +243,22 @@ using namespace std;
 //• de 401 a 600 – até 30 % do valor do saldo médio
 //• Acima de 600 – até 40 % do valor do saldo médio
 //Alg para informar o valor de credito mediante saldo médio do cliente
+
+int main()
+{
+	int saldoMedio;
+	cout << "Por favor informe o saldo medio do cliente: " << endl;
+	cin >> saldoMedio;
+	if (saldoMedio < 200) {
+		cout << "Ola cliente, seu saldo medio foi de: " << saldoMedio << "logo nao tem direito a credito";
+	}
+	else if (saldoMedio > 201 && saldoMedio <= 400) {
+		cout << "Ola cliente, seu saldo medio foi de " << saldoMedio << ", logo voce tem direito a credito de " << saldoMedio * 0.2;
+	}
+	else if (saldoMedio > 401 && saldoMedio <= 600) {
+		cout << "Ola cliente, seu saldo medio foi de " << saldoMedio << ", logo voce tem direito a credito de " << saldoMedio * 0.3;
+	}
+	else {
+		cout << "Ola cliente, seu saldo medio foi de " << saldoMedio << ", logo voce tem direito a credito de " << saldoMedio * 0.4;
+	}
+}
