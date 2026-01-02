@@ -262,3 +262,13 @@ int main()
 		cout << "Ola cliente, seu saldo medio foi de " << saldoMedio << ", logo voce tem direito a credito de " << saldoMedio * 0.4;
 	}
 }
+
+//15. Uma empresa concede aumentos de salário aos seus funcionários, variáveis de acordo com o cargo.Construa um
+//algoritmo que leia o salário e o cargo de um funcionário e calcule o novo salário.Se o cargo do funcionário não estiver
+//na tabela, este deverá, então, receber 10 % de aumento.Mostre o salário antigo, o novo salário e a diferença.
+//Os cargos considerados(e seus códigos) são:
+//• 101 Gerente 25 %;
+//• 102 Engenheiro 20 %;
+//• 103 Técnico 15 %
+//Algoritmo informa Aumento salário mediante cargo
+
