@@ -244,24 +244,24 @@ using namespace std;
 //• Acima de 600 – até 40 % do valor do saldo médio
 //Alg para informar o valor de credito mediante saldo médio do cliente
 
-int main()
-{
-	int saldoMedio;
-	cout << "Por favor informe o saldo medio do cliente: " << endl;
-	cin >> saldoMedio;
-	if (saldoMedio < 200) {
-		cout << "Ola cliente, seu saldo medio foi de: " << saldoMedio << "logo nao tem direito a credito";
-	}
-	else if (saldoMedio > 201 && saldoMedio <= 400) {
-		cout << "Ola cliente, seu saldo medio foi de " << saldoMedio << ", logo voce tem direito a credito de " << saldoMedio * 0.2;
-	}
-	else if (saldoMedio > 401 && saldoMedio <= 600) {
-		cout << "Ola cliente, seu saldo medio foi de " << saldoMedio << ", logo voce tem direito a credito de " << saldoMedio * 0.3;
-	}
-	else {
-		cout << "Ola cliente, seu saldo medio foi de " << saldoMedio << ", logo voce tem direito a credito de " << saldoMedio * 0.4;
-	}
-}
+//int main()
+//{
+//	int saldoMedio;
+//	cout << "Por favor informe o saldo medio do cliente: " << endl;
+//	cin >> saldoMedio;
+//	if (saldoMedio < 200) {
+//		cout << "Ola cliente, seu saldo medio foi de: " << saldoMedio << "logo nao tem direito a credito";
+//	}
+//	else if (saldoMedio > 201 && saldoMedio <= 400) {
+//		cout << "Ola cliente, seu saldo medio foi de " << saldoMedio << ", logo voce tem direito a credito de " << saldoMedio * 0.2;
+//	}
+//	else if (saldoMedio > 401 && saldoMedio <= 600) {
+//		cout << "Ola cliente, seu saldo medio foi de " << saldoMedio << ", logo voce tem direito a credito de " << saldoMedio * 0.3;
+//	}
+//	else {
+//		cout << "Ola cliente, seu saldo medio foi de " << saldoMedio << ", logo voce tem direito a credito de " << saldoMedio * 0.4;
+//	}
+//}
 
 //15. Uma empresa concede aumentos de salário aos seus funcionários, variáveis de acordo com o cargo.Construa um
 //algoritmo que leia o salário e o cargo de um funcionário e calcule o novo salário.Se o cargo do funcionário não estiver
@@ -271,4 +271,34 @@ int main()
 //• 102 Engenheiro 20 %;
 //• 103 Técnico 15 %
 //Algoritmo informa Aumento salário mediante cargo
+
+
+int main()
+{
+	double salarioAntigo, salarioNovo, dif;
+	int cargo;
+	cout << "Digite o salario atual: " << endl;
+	cin >> salarioAntigo;
+	cout << "Digite numericamente o cargo do funcionario: " << endl;
+	cout << "101 = Gerente" << endl;
+	cout << "102 = Engenheiro" << endl;
+	cout << "103 = Tecnico" << endl;
+	cin >> cargo;
+	if (cargo == 101) {
+		salarioNovo = salarioAntigo * 1.25;
+	}
+	else if (cargo == 102) {
+		salarioNovo = salarioAntigo * 1.20;
+	}
+	else if (cargo == 103) {
+		salarioNovo = salarioAntigo * 1.15;
+	}
+	else {
+		salarioNovo = salarioAntigo * 1.10;
+	}
+	dif = salarioNovo - salarioAntigo;
+	cout << "Salario antigo = " << salarioAntigo << endl;
+	cout << "Salario novo = " << salarioNovo << endl;
+	cout << "A diferenca ou o aumento foi de " << dif << " euros.";
+}
 
