@@ -8,8 +8,10 @@ using namespace std;
 //    std::cout << "Hello World!\n";
 //}
 
+
+
 //1. Apresentar o produto de dois números inteiros inseridos pelo utilizador.
-//
+// Algoritmo apresenta produto de dois numeros
 //int main()
 //{
 //	int num1, num2;
@@ -20,8 +22,10 @@ using namespace std;
 //	cout << "O produto dos numeros " << num1 << " X " << num2 << " = " << num1 * num2;
 //}
 
+
+
 //2. Calcular a média de três números inteiros inseridos pelo utilizador.
-//
+// Algoritmo que calcula media
 //int main()
 //{
 //	int num1, num2, num3;
@@ -30,8 +34,10 @@ using namespace std;
 //	cout << "A media dos numeros inseridos: " << (num1 + num2 + num3) / 3;
 //}
 
+
+
 //3. Mostrar o resultado da divisão inteira entre dois números inseridos pelo utilizador.
-//
+// Algoritmo que mostra divisao de dois numeros
 //int main()
 //{
 //	int num1, num2;
@@ -40,8 +46,10 @@ using namespace std;
 //	cout << "A divisao inteira dos dois numeros: " << num1 / num2;
 //}
 
+
+
 //4. Ler um número inteiro e apresentar o seu antecedente (número anterior) e o seu sucessor (posterior).
-//
+// Algoritmo que apresentar numero seguinte e anterior
 //int main()
 //{
 //	int num;
@@ -50,8 +58,10 @@ using namespace std;
 //	cout << "O antecedente do numero inserido: " << num - 1 << ". " << "O sucessor do numero inserido: " << num + 1 << ".";
 //}
 
+
+
 //5. Obter a área de um triângulo. area = (base * altura) / 2
-//
+// Algoritmo que calcula area de triangulo
 //int main()
 //{
 //	int base, altura, area;
@@ -64,8 +74,10 @@ using namespace std;
 //	cout << "A area do triangulo e: " << area << endl;
 //}
 
+
+
 //6. Determinar o valor total a pagar de uma dada mercadoria sendo que ao valor lido, deverá ser acrescido 23% de IVA.
-//
+// Algoritmo que calcula valor de mercadoria acrescido IVA
 //int main()
 //{
 //	int valor;
@@ -77,13 +89,15 @@ using namespace std;
 //	cout << "O valor final do produto mencionado mais 23% de IVA: " << endl << valorComIva;
 //}
 
+
+
 //7. Calcular o troco efetivo a retribuir a um cliente que decide dar como gorjeta ao funcionário 10% do valor do troco
 //inicial.
 //Note que deve pedir ao utilizador para inserir :
 //O valor a pagar;
 //O valor dado para fazer o pagamento(assumindo que este é superior).
 //Considere que o valor dado para pagar é superior ao valor que tem a pagar.
-//
+// Algoritmo que calcula troco
 //int main()
 //{
 //	double valorPagar, valorDado, trocoEfetivo, trocoInicial, gorjeta;
@@ -101,9 +115,10 @@ using namespace std;
 //}
 
 
+
 //8. Dado um número inteiro positivo, com 3 dígitos inteiros, imprimir os seus dígitos separados por espaços.
 //	Considere que o número inserido já é de 3 dígitos, ou seja, entre 100 e 999.
-//
+// Algoritmo que imprime digitos separados por espaço
 //int main()
 //{
 //	int numero, n1, n2, n3;
@@ -115,8 +130,10 @@ using namespace std;
 //	cout << n1 << " " << n2 << " " << n3;
 //}
 
+
+
 //9. Ler um número inteiro e que indicar se o número é par ou ímpar.
-//
+// Algoritmo que indica numero par ou impar
 //int main()
 //{
 //	int numero;
@@ -128,6 +145,8 @@ using namespace std;
 //		cout << "Numero inserido = impar.";
 //	}
 //}
+
+
 
 //10. Dadas as notas do exame escrito e do oral de um aluno, verificar se este obteve aprovação(ExEscrito = 70 %,
 //	ExOral = 30 %, aprovação ≥ 10).
@@ -148,6 +167,8 @@ using namespace std;
 //		cout << "Aluno foi reprovado com media: " << media;
 //	}
 //}
+
+
 
 //11. Calcular o salário semanal de um colaborador, que recebe à hora, a partir apenas do nº de horas que este trabalhou.
 //Sabe - se que o número de horas semanais é 36 e que o preço à hora é de 7, 5€.Se o colaborador fizer horas extra(mais
@@ -176,6 +197,7 @@ using namespace std;
 //		cout << "salario semanal = horastrabalhadas x valorhora(7.5)";
 //	}
 //}
+
 
 
 //12. Uma empresa decidiu classificar os seus colaboradores em quatro grupos:
@@ -213,6 +235,8 @@ using namespace std;
 //	}
 //}
 
+
+
 //13. Construa um programa que aceite números entre 1 e 7 e a cada um deles faça corresponder o dia da semana.Por
 //exemplo, lendo o número 1 o programa deverá escrever “domingo” e lendo o número 7 devera escrever “sábado”.
 // Algoritmo que informa o dia da semana mediante dia informado em numero.
@@ -235,6 +259,8 @@ using namespace std;
 //	}
 //}
 
+
+
 //14. Um banco concede um crédito especial aos seus clientes, variável com o saldo médio no último ano.Construa um
 //algoritmo que leia o saldo médio de um cliente e calcule o valor máximo de crédito de acordo com a tabela abaixo.
 //Mostre uma mensagem para informar o saldo médio e o valor do crédito.
@@ -243,7 +269,6 @@ using namespace std;
 //• de 401 a 600 – até 30 % do valor do saldo médio
 //• Acima de 600 – até 40 % do valor do saldo médio
 //Alg para informar o valor de credito mediante saldo médio do cliente
-
 //int main()
 //{
 //	int saldoMedio;
@@ -263,6 +288,8 @@ using namespace std;
 //	}
 //}
 
+
+
 //15. Uma empresa concede aumentos de salário aos seus funcionários, variáveis de acordo com o cargo.Construa um
 //algoritmo que leia o salário e o cargo de um funcionário e calcule o novo salário.Se o cargo do funcionário não estiver
 //na tabela, este deverá, então, receber 10 % de aumento.Mostre o salário antigo, o novo salário e a diferença.
@@ -271,8 +298,6 @@ using namespace std;
 //• 102 Engenheiro 20 %;
 //• 103 Técnico 15 %
 //Algoritmo informa Aumento salário mediante cargo
-
-
 //int main()
 //{
 //	double salarioAntigo, salarioNovo, dif;
@@ -302,10 +327,11 @@ using namespace std;
 //	cout << "A diferenca ou o aumento foi de " << dif << " euros.";
 //}
 
+
+
 //16. Peça ao utilizador os comprimentos dos três lados de um triângulo. Verifique se os valores formam um triângulo
 //válido.Caso seja válido, classifique o triângulo como equilátero, isósceles ou escaleno.
 // Algoritmo que verifica tipo de triangulo.
-
 //int main() {
 //	float a, b, c;
 //	cout << "Introduza o comprimento dos tres lados do triangulo: " << endl;
@@ -335,6 +361,8 @@ using namespace std;
 //	}
 //}
 
+
+
 //17. Peça ao utilizador uma nota entre 0 e 100. Classifique a nota em categorias(A, B, C, D ou F) usando a seguinte tabela :
 //• A : 90 - 100
 //• B : 80 - 89
@@ -342,7 +370,7 @@ using namespace std;
 //• D : 60 - 69
 //• F : < 60
 //	Valide se a nota está no intervalo permitido.
-
+// Algoritmo que classifica notas.
 //int main() {
 //	int nota;
 //	do {
@@ -372,42 +400,75 @@ using namespace std;
 //}
 
 
+
 //18. Receba o salário bruto de um funcionário e deduza os impostos com base na tabela de IRS e Segurança social.
 //18.1.Apresente o salário líquido, e soma dos impostos.
 //Salario Liquido e soma dos impostos
+// Algoritmo que calcula impostoso e salario liquido do usuario.
+//int main() {
+//	double segSoc, salBru, taxSegSoc, iRS, taxIRS, impTot;
+//	taxSegSoc = 0.11;
+//	cout << "Insira o Salario Bruto: ";
+//	cin >> salBru;
+//	segSoc = salBru * taxSegSoc;
+//
+//	if (salBru <= 870.00)
+//		taxIRS = 0;
+//	else if (salBru <= 992.00)
+//		taxIRS = 0.13;
+//	else if (salBru <= 1136.00)
+//		taxIRS = 0.165;
+//	else if (salBru <= 1187.00)
+//		taxIRS = 0.22;
+//	else if (salBru <= 1787.00)
+//		taxIRS = 0.25;
+//	else if (salBru <= 2078.00)
+//		taxIRS = 0.32;
+//	else if (salBru <= 2432.00)
+//		taxIRS = 0.355;
+//	else if (salBru <= 3233.00)
+//		taxIRS = 0.3872;
+//	else if (salBru <= 5547.00)
+//		taxIRS = 0.4005;
+//	else if (salBru <= 20221.00)
+//		taxIRS = 0.4495;
+//	else if (salBru > 20221.00)
+//		taxIRS = 0.4717;
+//	iRS = salBru * taxIRS;
+//	impTot = segSoc + iRS;
+//	cout << "O Salario Liquido e de " << salBru - impTot << " euros, a soma dos impostos e de " << impTot << " euros.";
+//}
 
-int main() {
-	double segSoc, salBru, taxSegSoc, iRS, taxIRS, impTot;
-	taxSegSoc = 0.11;
-	cout << "Insira o Salario Bruto: ";
-	cin >> salBru;
-	segSoc = salBru * taxSegSoc;
 
-	if (salBru <= 870.00)
-		taxIRS = 0;
-	else if (salBru <= 992.00)
-		taxIRS = 0.13;
-	else if (salBru <= 1136.00)
-		taxIRS = 0.165;
-	else if (salBru <= 1187.00)
-		taxIRS = 0.22;
-	else if (salBru <= 1787.00)
-		taxIRS = 0.25;
-	else if (salBru <= 2078.00)
-		taxIRS = 0.32;
-	else if (salBru <= 2432.00)
-		taxIRS = 0.355;
-	else if (salBru <= 3233.00)
-		taxIRS = 0.3872;
-	else if (salBru <= 5547.00)
-		taxIRS = 0.4005;
-	else if (salBru <= 20221.00)
-		taxIRS = 0.4495;
-	else if (salBru > 20221.00)
-		taxIRS = 0.4717;
 
-	iRS = salBru * taxIRS;
-	impTot = segSoc + iRS;
-
-	cout << "O Salario Liquido e de " << salBru - impTot << " euros, a soma dos impostos e de " << impTot << " euros.";
-}
+//19. Receba o consumo em kWh de um cliente e calcule o valor da fatura com base nas faixas de consumo :
+//• Até 100 kWh : 0.5 € / kWh
+//• 101 - 200 kWh : 0.7 € / kWh
+//• Acima de 200 kWh : 1.0 € / kWh
+//Adicione uma taxa fixa de €5 ao valor calculado.
+// Algoritmo calcula consumo kwh;
+//int main() {
+//	float kwh, valorFinal;
+//	int taxaFixa = 5;
+//    do {
+//        cout << "Introduza o consumo em kWh: ";
+//        cin >> kwh;
+//        if (kwh < 0) {
+//            cout << "Erro: O consumo nao pode ser negativo. Tente novamente." << endl;
+//        }
+//    } while (kwh < 0);
+//    if (kwh <= 100) {
+//        valorFinal = (kwh * 0.5);
+//    }
+//    else if (kwh <= 200) {
+//        valorFinal = (kwh * 0.7);
+//    }
+//    else {
+//        valorFinal = (kwh * 1.0);
+//    }
+//    valorFinal = valorFinal + taxaFixa;
+//    cout << "--- Detalhes da Fatura ---" << endl;
+//    cout << "Consumo: " << kwh << " kWh" << endl;
+//    cout << "Taxa Fixa: " << taxaFixa << " EUR" << endl;
+//    cout << "Valor Total a Pagar: " << valorFinal << " EUR" << endl;
+//}
