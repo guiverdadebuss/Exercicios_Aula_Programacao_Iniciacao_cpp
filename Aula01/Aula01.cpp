@@ -343,30 +343,71 @@ using namespace std;
 //• F : < 60
 //	Valide se a nota está no intervalo permitido.
 
+//int main() {
+//	int nota;
+//	do {
+//		cout << "Introduza a nota do aluno (0 a 100): ";
+//		cin >> nota;
+//		if (nota < 0 || nota > 100) {
+//			cout << "Nota invalida! Insira novamente." << endl;
+//		}
+//	} while (nota < 0 || nota > 100);
+//	cout << "Nota validada com sucesso" << endl;
+//	cout << "Categoria: ";
+//	if (nota >= 90) {
+//		cout << "A" << endl;
+//	}
+//	else if (nota >= 80) {
+//		cout << "B" << endl;
+//	}
+//	else if (nota >= 70) {
+//		cout << "c" << endl;
+//	}
+//	else if (nota >= 60) {
+//		cout << "D" << endl;
+//	}
+//	else {
+//		cout << "F" << endl;
+//	}
+//}
+
+
+//18. Receba o salário bruto de um funcionário e deduza os impostos com base na tabela de IRS e Segurança social.
+//18.1.Apresente o salário líquido, e soma dos impostos.
+//Salario Liquido e soma dos impostos
+
 int main() {
-	int nota;
-	do {
-		cout << "Introduza a nota do aluno (0 a 100): ";
-		cin >> nota;
-		if (nota < 0 || nota > 100) {
-			cout << "Nota invalida! Insira novamente." << endl;
-		}
-	} while (nota < 0 || nota > 100);
-	cout << "Nota validada com sucesso" << endl;
-	cout << "Categoria: ";
-	if (nota >= 90) {
-		cout << "A" << endl;
-	}
-	else if (nota >= 80) {
-		cout << "B" << endl;
-	}
-	else if (nota >= 70) {
-		cout << "c" << endl;
-	}
-	else if (nota >= 60) {
-		cout << "D" << endl;
-	}
-	else {
-		cout << "F" << endl;
-	}
+	double segSoc, salBru, taxSegSoc, iRS, taxIRS, impTot;
+	taxSegSoc = 0.11;
+	cout << "Insira o Salario Bruto: ";
+	cin >> salBru;
+	segSoc = salBru * taxSegSoc;
+
+	if (salBru <= 870.00)
+		taxIRS = 0;
+	else if (salBru <= 992.00)
+		taxIRS = 0.13;
+	else if (salBru <= 1136.00)
+		taxIRS = 0.165;
+	else if (salBru <= 1187.00)
+		taxIRS = 0.22;
+	else if (salBru <= 1787.00)
+		taxIRS = 0.25;
+	else if (salBru <= 2078.00)
+		taxIRS = 0.32;
+	else if (salBru <= 2432.00)
+		taxIRS = 0.355;
+	else if (salBru <= 3233.00)
+		taxIRS = 0.3872;
+	else if (salBru <= 5547.00)
+		taxIRS = 0.4005;
+	else if (salBru <= 20221.00)
+		taxIRS = 0.4495;
+	else if (salBru > 20221.00)
+		taxIRS = 0.4717;
+
+	iRS = salBru * taxIRS;
+	impTot = segSoc + iRS;
+
+	cout << "O Salario Liquido e de " << salBru - impTot << " euros, a soma dos impostos e de " << impTot << " euros.";
 }
