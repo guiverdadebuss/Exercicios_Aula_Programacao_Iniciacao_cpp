@@ -273,32 +273,64 @@ using namespace std;
 //Algoritmo informa Aumento salário mediante cargo
 
 
-int main()
-{
-	double salarioAntigo, salarioNovo, dif;
-	int cargo;
-	cout << "Digite o salario atual: " << endl;
-	cin >> salarioAntigo;
-	cout << "Digite numericamente o cargo do funcionario: " << endl;
-	cout << "101 = Gerente" << endl;
-	cout << "102 = Engenheiro" << endl;
-	cout << "103 = Tecnico" << endl;
-	cin >> cargo;
-	if (cargo == 101) {
-		salarioNovo = salarioAntigo * 1.25;
-	}
-	else if (cargo == 102) {
-		salarioNovo = salarioAntigo * 1.20;
-	}
-	else if (cargo == 103) {
-		salarioNovo = salarioAntigo * 1.15;
+//int main()
+//{
+//	double salarioAntigo, salarioNovo, dif;
+//	int cargo;
+//	cout << "Digite o salario atual: " << endl;
+//	cin >> salarioAntigo;
+//	cout << "Digite numericamente o cargo do funcionario: " << endl;
+//	cout << "101 = Gerente" << endl;
+//	cout << "102 = Engenheiro" << endl;
+//	cout << "103 = Tecnico" << endl;
+//	cin >> cargo;
+//	if (cargo == 101) {
+//		salarioNovo = salarioAntigo * 1.25;
+//	}
+//	else if (cargo == 102) {
+//		salarioNovo = salarioAntigo * 1.20;
+//	}
+//	else if (cargo == 103) {
+//		salarioNovo = salarioAntigo * 1.15;
+//	}
+//	else {
+//		salarioNovo = salarioAntigo * 1.10;
+//	}
+//	dif = salarioNovo - salarioAntigo;
+//	cout << "Salario antigo = " << salarioAntigo << endl;
+//	cout << "Salario novo = " << salarioNovo << endl;
+//	cout << "A diferenca ou o aumento foi de " << dif << " euros.";
+//}
+
+//16. Peça ao utilizador os comprimentos dos três lados de um triângulo. Verifique se os valores formam um triângulo
+//válido.Caso seja válido, classifique o triângulo como equilátero, isósceles ou escaleno.
+// Algoritmo que verifica tipo de triangulo.
+
+int main() {
+	float a, b, c;
+	cout << "Introduza o comprimento dos tres lados do triangulo: " << endl;
+	cout << "Lado 1: ";
+	cin >> a;
+	cout << "Lado 2: ";
+	cin >> b;
+	cout << "Lado 3: ";
+	cin >> c;
+	cout << "Verificacao se os valores informados formam um triangulo" << endl;
+	cout << "..........." << endl;
+	if ((a + b > c) && (a + c > b) && (b + c > a)) {
+		cout << "Os valores introduzidos formam um triangulo valido e seu triangulo e classificado como: ";
+
+		if (a == b && b == c) {
+			cout << "Triangulo Equilatero (todos os lados iguais).";
+		}
+		else if (a == b || a == c || b == c) {
+			cout << "Triangulo Isoceles (dois lados iguais).";
+		}
+		else {
+			cout << "Triangulo Escaleno (todos os lados sao diferentes).";
+		}
 	}
 	else {
-		salarioNovo = salarioAntigo * 1.10;
+		cout << "Os valores introduzidos nao formam um triangulo valido.";
 	}
-	dif = salarioNovo - salarioAntigo;
-	cout << "Salario antigo = " << salarioAntigo << endl;
-	cout << "Salario novo = " << salarioNovo << endl;
-	cout << "A diferenca ou o aumento foi de " << dif << " euros.";
 }
-
