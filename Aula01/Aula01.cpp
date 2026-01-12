@@ -306,31 +306,67 @@ using namespace std;
 //válido.Caso seja válido, classifique o triângulo como equilátero, isósceles ou escaleno.
 // Algoritmo que verifica tipo de triangulo.
 
-int main() {
-	float a, b, c;
-	cout << "Introduza o comprimento dos tres lados do triangulo: " << endl;
-	cout << "Lado 1: ";
-	cin >> a;
-	cout << "Lado 2: ";
-	cin >> b;
-	cout << "Lado 3: ";
-	cin >> c;
-	cout << "Verificacao se os valores informados formam um triangulo" << endl;
-	cout << "..........." << endl;
-	if ((a + b > c) && (a + c > b) && (b + c > a)) {
-		cout << "Os valores introduzidos formam um triangulo valido e seu triangulo e classificado como: ";
+//int main() {
+//	float a, b, c;
+//	cout << "Introduza o comprimento dos tres lados do triangulo: " << endl;
+//	cout << "Lado 1: ";
+//	cin >> a;
+//	cout << "Lado 2: ";
+//	cin >> b;
+//	cout << "Lado 3: ";
+//	cin >> c;
+//	cout << "Verificacao se os valores informados formam um triangulo" << endl;
+//	cout << "..........." << endl;
+//	if ((a + b > c) && (a + c > b) && (b + c > a)) {
+//		cout << "Os valores introduzidos formam um triangulo valido e seu triangulo e classificado como: ";
+//
+//		if (a == b && b == c) {
+//			cout << "Triangulo Equilatero (todos os lados iguais).";
+//		}
+//		else if (a == b || a == c || b == c) {
+//			cout << "Triangulo Isoceles (dois lados iguais).";
+//		}
+//		else {
+//			cout << "Triangulo Escaleno (todos os lados sao diferentes).";
+//		}
+//	}
+//	else {
+//		cout << "Os valores introduzidos nao formam um triangulo valido.";
+//	}
+//}
 
-		if (a == b && b == c) {
-			cout << "Triangulo Equilatero (todos os lados iguais).";
+//17. Peça ao utilizador uma nota entre 0 e 100. Classifique a nota em categorias(A, B, C, D ou F) usando a seguinte tabela :
+//• A : 90 - 100
+//• B : 80 - 89
+//• C : 70 - 79
+//• D : 60 - 69
+//• F : < 60
+//	Valide se a nota está no intervalo permitido.
+
+int main() {
+	int nota;
+	do {
+		cout << "Introduza a nota do aluno (0 a 100): ";
+		cin >> nota;
+		if (nota < 0 || nota > 100) {
+			cout << "Nota invalida! Insira novamente." << endl;
 		}
-		else if (a == b || a == c || b == c) {
-			cout << "Triangulo Isoceles (dois lados iguais).";
-		}
-		else {
-			cout << "Triangulo Escaleno (todos os lados sao diferentes).";
-		}
+	} while (nota < 0 || nota > 100);
+	cout << "Nota validada com sucesso" << endl;
+	cout << "Categoria: ";
+	if (nota >= 90) {
+		cout << "A" << endl;
+	}
+	else if (nota >= 80) {
+		cout << "B" << endl;
+	}
+	else if (nota >= 70) {
+		cout << "c" << endl;
+	}
+	else if (nota >= 60) {
+		cout << "D" << endl;
 	}
 	else {
-		cout << "Os valores introduzidos nao formam um triangulo valido.";
+		cout << "F" << endl;
 	}
 }
